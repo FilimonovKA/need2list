@@ -20,7 +20,7 @@ public class NumbersDictionary extends Dictionary {
     }
 
     private boolean countCheck(String value) {
-        return value.length() <= 5;
+        return value.length() == 5;
     }
 
     private boolean ValidityСheck(String value) {
