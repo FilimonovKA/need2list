@@ -46,7 +46,7 @@ public class Invoker implements ICommand {
                     receiver.Add(input());
                 }
                 case "exit" -> System.exit(0);
-                default -> System.out.println("Не верная команда!");
+                default -> System.out.println("Неверная команда!");
             }
         }
         catch (AccessDeniedException ade) {
