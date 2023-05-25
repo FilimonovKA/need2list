@@ -20,11 +20,11 @@ public class LatinAlphabetDictionary extends Dictionary {
     }
 
     private boolean countCheck(String value) {
-        return value.length() <= 4;
+        return value.length() == 4;
     }
 
     private boolean ValidityСheck(String value) {
-        boolean validCheckValue = value.matches("^[a-zA-Z0-9]+$");
+        boolean validCheckValue = value.matches("^[a-zA-Z]+$");
         return validCheckValue && !isNumeric(value) && countCheck(value);
     }
 
